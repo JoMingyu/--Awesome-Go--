@@ -4,23 +4,26 @@ Supports GC, Concurrent, Compilation Language by Google
 <https://golang.org/>
 
 ## Go
-2007년 구글에서 개발을 시작하여 2012년에 버전 1.0을 완성한 프로그래밍 언어이며, 바둑(Go)와 구별하기 위해 Golang이라고도 부릅니다. 구글의 V8 엔진에 참여했던 Robert Griesemer, 유닉스 개발에 참여했던 Rob Pike, B 언어의 개발자인 Ken Thompson이 함께 개발했습니다. 전통적인 컴파일 - 링크 모델을 따르며 GC를 제공합니다. 단순하고 간결한 프로그래밍 언어를 지향하여, Java의 절반에 해당하는 25개의 키워드만으로 프로그래밍이 가능하게 하였습니다. 큰 특징으로 CSP(Communicating Sequential Processes) 스타일의 병행성 프로그래밍을 지원합니다.
+2007년 구글에서 개발을 시작하여 2012년에 버전 1.0을 완성한 프로그래밍 언어이며, 바둑(Go)와 구별하기 위해 Golang이라고도 부른다. 구글의 V8 엔진에 참여했던 Robert Griesemer, 유닉스 개발에 참여했던 Rob Pike, B 언어의 개발자인 Ken Thompson이 함께 개발했다. 단순하고 간결한 프로그래밍 언어를 지향하여, Java의 절반에 해당하는 25개의 키워드만으로 프로그래밍이 가능하게 했다. CSP(Communicating Sequential Processes) 스타일의 강력한 동시성 프로그래밍, 정적 타이핑과 강타입, 가비지 컬렉션, 헤더 파일 관련의 의존관계 문제를 해결하여 매우 빠른 컴파일, 높은 생산성과 성능이 특징이다.
 
-백엔드 서비스나 influxdb, prometheus 등 빠른 속도가 필요한 부분들에서 Go의 강력한 병행성 프로그래밍을 사용하고 있습니다.
+Go는 많은 프로그래밍 언어들의 장점들을 최대한 많이 수용하였고, 따라서 아래와 같은 특징을 가진다.
 
-## Tutorials
-<a href="http://www.codingnuri.com/golang-book/index.html">[Ebook] Go 프로그래밍 입문</a>  
-<a href="https://thebook.io/006806/">[Ebook] Go 언어 웹 프로그래밍 철저 입문</a>  
-<a href="http://www.pyrasis.com/private/2015/06/01/publish-go-for-the-really-impatient-book">[Ebook] 가장 빨리 만나는 Go 언어</a>  
-<a href="http://go-tour-kr.appspot.com/#1">A Tour of Go</a>
+- 정수형은 signed와 unsigned로 나뉘고, 크기를 기준으로 타입이 분할되어 있다.(int8/16/32/64, uint8/16/32/64)
+- 정적 타이핑 강타입 언어지만 타입 추론을 지원한다.
+- for만으로 다른 언어의 while를 표현할 수 있다.
+- if에도 for의 초기값 설정처럼 statement를 사용할 수 있다.
+- 함수에서 여러 개의 값을 한 번에 반환할 수 있다.
+- Python의 argument unpacking처럼, slice를 함수의 인자에 넘길 수 있다.
+- Go에서 함수는 1급 함수(first class function)이며, 따라서 런타임 생성과 익명 생성이 가능하다.
+- 포인터를 지원하지만, 포인터에 관련된 복잡성을 제거하기 위해 포인터 간 연산은 불가능하다.
+- 구조체를 지원하고, 태그 개념을 통해 재사용성을 높인다.
+- 인터페이스와 duck typing 기반의 자연스러운 추상화를 지원한다.
+- 고루틴과 채널이라는 강력한(간단하고, 가벼운) 동시성을 지원한다.
+- go fmt라는 내장 기능 덕분에, 컨벤션이 통일되어 있다.
+- 별도의 VM 없이 가비지 컬렉션을 제공한다.
+- 클래스와 상속, 예외, 제네릭, assertion, 오버로딩을 지원하지 않는다.
 
-## 읽을거리
-<a href="https://talks.golang.org/2013/bestpractices.slide#1">Twelve Go Best Practices</a>  
 
-## Books
-- 가장 빨리 만나는 Go 언어
-- Go 인 액션
-- 디스커버리 Go 언어
-- Go 언어 실전 테크닉
+## GOPATH!!!!
 
-## My own projects using Go
+## gofmt
