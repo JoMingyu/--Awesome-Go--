@@ -45,4 +45,14 @@ Python처럼 '현재 디렉토리'가 프로젝트의 root로 되는 게 아니�
 
 나만이 아니라 많은 사람들이 이걸 맘에 안들어 하긴 하지만, go만의 문화니까 그러려니 하자.
 
+## Go의 웹 프레임워크
+루비의 Ruby on Rails와 Sinatra, 파이썬의 Django와 Flask, Node.js의 Express처럼 메인 프레임워크들이 대체적으로 정해져 있는데, Go는 딱히 그런 게 없다. Go의 대표적인 풀 스택 웹 프레임워크는 beego와 revel이 있고, 마이크로 웹 프레임워크는 martini와 iris, gin, echo가 있다. 개인적으로 풀 스택 프레임워크는 별로 좋아하지 않아서, 마이크로 웹 프레임워크들을 비교해 보자.
+
+- [martini](https://github.com/go-martini/martini) : 초반에 인기를 끌었으나 [Go의 사상과 맞지 않는다는 의견들](https://stephensearles.com/three-reasons-you-should-not-use-martini/)이 많았다고 한다.
+- [iris](https://github.com/kataras/iris) : 같은 Go 프레임워크들 중에서도 성능이 정말 좋지만, 개발자가 이슈나 PR을 고의적으로 수정하거나 닫아버리는 등 도덕적인 논란이 많았다.
+- [gin](https://github.com/gin-gonic/gin) : martini와 비슷한 API를 가지지만, 더 빠르다고 소개하고 있다. 괜찮은 것 같다.
+- [echo](https://github.com/labstack/echo) : gin보다 빠르다고 소개하고 있다. 소개만 보면 `martini < gin < echo`라고 보면 되겠다.
+
+다들 속도를 계속해서 강조하지만, Go를 쓴다는 것 자체가 성능의 이점을 상당 부분 먹고 들어가게 된다. 따라서 성능이 아니라 '활발한 활동이 이뤄지는가?'를 봤을 때 현재는 echo가 가장 우위에 있다.
+
 ## gofmt
