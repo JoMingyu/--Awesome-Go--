@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/labstack/echo"
+	// go get -u github.com/labstack/echo/...
 )
 
 func main() {
